@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         
         let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
-            present(ac, animated: true)
+        present(ac, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
