@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,18 +20,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icE-bS-G4J">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="icE-bS-G4J" secondAttribute="height" multiplier="2:1" id="2uH-Wa-PgW"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CYz-Na-gYP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRp-53-4Zo">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XRp-53-4Zo" secondAttribute="height" multiplier="2:1" id="rdn-kw-rfe"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBq-Ca-bbL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQO-RF-QLj">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oQO-RF-QLj" secondAttribute="height" multiplier="2:1" id="VJL-f2-RWR"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lh9-nm-0B6"/>
@@ -39,9 +49,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="oQO-RF-QLj" firstAttribute="height" secondItem="icE-bS-G4J" secondAttribute="height" id="AMp-Cf-Dgu"/>
                             <constraint firstItem="icE-bS-G4J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Taz-bG-7tX"/>
                             <constraint firstItem="XRp-53-4Zo" firstAttribute="top" secondItem="oQO-RF-QLj" secondAttribute="bottom" constant="32" id="XgG-1g-5ZC"/>
                             <constraint firstItem="XRp-53-4Zo" firstAttribute="centerX" secondItem="oQO-RF-QLj" secondAttribute="centerX" id="eUs-g2-60z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="XRp-53-4Zo" secondAttribute="bottom" constant="20" id="g3k-54-pkB"/>
+                            <constraint firstItem="XRp-53-4Zo" firstAttribute="height" secondItem="oQO-RF-QLj" secondAttribute="height" id="h0R-3m-hMn"/>
                             <constraint firstItem="oQO-RF-QLj" firstAttribute="centerX" secondItem="icE-bS-G4J" secondAttribute="centerX" id="kQe-IR-3zX"/>
                             <constraint firstItem="XRp-53-4Zo" firstAttribute="centerX" secondItem="oQO-RF-QLj" secondAttribute="centerX" id="qTw-UG-I8x"/>
                             <constraint firstItem="oQO-RF-QLj" firstAttribute="top" secondItem="icE-bS-G4J" secondAttribute="bottom" constant="33" id="wpe-23-pyf"/>
